@@ -1,4 +1,6 @@
+import {App, Stack} from "aws-cdk-lib";
 
-console.log('Hello World!');
+const app = new App();
+const stack = new Stack(app, "Dmitri");
 
-
+app.synth();
