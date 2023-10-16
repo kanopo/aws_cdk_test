@@ -1,0 +1,17 @@
+{
+  "name": "test_cdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc;  node ./dist/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.101.0"
+  }
+}
