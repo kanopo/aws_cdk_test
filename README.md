@@ -1,14 +1,21 @@
-# Welcome to your CDK TypeScript project
+# Imparando il corpo umano(jk cdk)
 
-This is a blank project for CDK development with TypeScript.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Setup CDK
+```bash
+mkdir my-project
+cd my-project
+cdk init app --language typescript
+```
 
-## Useful commands
+Si deve modificare all'occorrenza qualche file e si e' a posto.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Base project
+Il progetto base include solo uno stack di cloudformation vuoto:
+
+```bash
+import { App, Stack } from "aws-cdk-lib";
+
+const app = new App();
+const stack = new Stack(app, "StackName");
+```
