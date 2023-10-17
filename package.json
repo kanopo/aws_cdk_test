@@ -2,8 +2,7 @@
   "name": "test_cdk",
   "version": "0.1.0",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
+    "dev": "ts-node src/main.ts",
     "cdk": "cdk"
   },
   "devDependencies": {
@@ -15,7 +14,6 @@
   "dependencies": {
     "aws-cdk-lib": "2.101.0",
     "constructs": "^10.0.0",
-    "dotenv": "^16.3.1",
     "source-map-support": "^0.5.21"
   }
 }
